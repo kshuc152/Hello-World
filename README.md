@@ -21,9 +21,7 @@ def get(html):
     #print items #列表list
     return items
 
-#多页,写入文件
 for j in range(1,2):
-
     url0 = 'http://search.51job.com/jobsearch/search_result.php?fromJs=1&jobarea=000000%2C00&district=000000&funtype=0000&industrytype=00&issuedate=9&providesalary=99&keywordtype=2&curr_page='+str(j)+'&lang=c&stype=1&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&lonlat=0%2C0&radius=-1&ord_field=0&list_type=0&fromType=14&dibiaoid=0&confirmdate=9'
     html = get_content(j)  # 调用获取源码
     for i in get(html):
